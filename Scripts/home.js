@@ -5,7 +5,6 @@ Author: mozahzah
 */
 
 const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-const homeBackgroundVideoContainer = document.getElementById("home-background-video-container");
 
 document.addEventListener('DOMContentLoaded', function () 
 {
@@ -15,49 +14,6 @@ document.addEventListener('DOMContentLoaded', function ()
     }
 
     window.addEventListener('scroll', onWindowScroll);
-
-    let errorPlayingVideo = true;
-    const iframe = document.getElementById('home-background-video');
-    const loader = document.getElementById('loader-container');
-    document.body.style.overflow = 'hidden';
-    if (iframe)
-    {
-        const player = new Vimeo.Player(iframe);
-        if (player)
-        {
-            errorPlayingVideo = false;
-            player.on('play', function () 
-            {
-                if (loader)
-                {
-                    loader.classList.add('hidden');
-                    document.body.style.overflow = 'visible';
-                }
-            });
-        }
-    }
-    
-    if (errorPlayingVideo && loader)
-    {
-        loader.classList.add('hidden');
-        document.body.style.overflow = 'visible';
-    }
-
-    const TIMEOUT_DURATION = 3000;
-    setTimeout(() => 
-    {
-        loader.classList.add('hidden');
-        document.body.style.overflow = 'visible';
-        if (player.getPaused())
-        {
-            player.pause();
-            if (iframe)
-            {
-                iframe.style.display = 'none';
-            }
-        }
-    }, TIMEOUT_DURATION); 
-
     updateActiveNavLink();
 });
 
