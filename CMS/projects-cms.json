@@ -42,5 +42,16 @@
     [
       "C++", "JUCE", "CMake" 
     ]
+  },
+  {
+    "title": "IEActions",
+    "description": "IE's action extension library for Windows and macOS programs.",
+    "image": "/Resources/IECore.jpg",
+    "zoom": 120,
+    "link": "https://github.com/Interactive-Echoes/IEActions",
+    "tools":
+    [
+      "C++", "CMake", "OS" 
+    ]
   }
 ]
