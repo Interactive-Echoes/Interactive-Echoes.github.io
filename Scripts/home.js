@@ -14,6 +14,16 @@ document.addEventListener('DOMContentLoaded', function ()
     }
 
     window.addEventListener('scroll', onWindowScroll);
+
+    const loader = document.getElementById('loader-container');
+    window.addEventListener('load', function () 
+    {
+        if (loader)
+        {
+            loader.classList.add('hidden');
+        }
+    });
+
     updateActiveNavLink();
 });
 
