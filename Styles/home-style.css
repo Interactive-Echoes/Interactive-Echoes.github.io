@@ -109,11 +109,13 @@ body
 
 #fixed-info-section
 {
-    width: 80%;
     height: 20%;
+    position: fixed;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    left: 5%;
+    top: 10%;
+    flex-direction: column;
+    align-items: start;
     justify-content: space-between;
     overflow: hidden;
 }
@@ -313,7 +315,7 @@ body
 
 .side-nav
 {
-  margin-top: 0%;
+  position: static;
 }
 
 .side-nav-list 
@@ -464,17 +466,15 @@ body
 
   #fixed-info-section
   {
-    position: static;
+    position: absolute;
     flex-direction: row;
     align-items: center;
-    width: 100%;
-    padding-left: 0;
+    top: -2%;
   }
 
-  #home-background-video-container
+  #main-logo img
   {
-    top: -25%;
-    left: 5%;
+    width: 300px;
   }
 
   .side-nav
