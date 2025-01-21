@@ -469,7 +469,7 @@ body
     position: absolute;
     flex-direction: row;
     align-items: center;
-    top: -2%;
+    top: 8%;
   }
 
   #main-logo img
