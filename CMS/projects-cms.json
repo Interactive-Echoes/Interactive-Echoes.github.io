@@ -1,7 +1,7 @@
 [
   {
     "title": "IEMidi",
-    "description": "IEMidi is a simple, open-source MIDI editor that leverages RtMidi for its MIDI message handling. The editor is designed to map any MIDI message to various actions such as volume control, mute, console commands or opening files. It also includes a MIDI logger for monitoring MIDI messages in real-time.",
+    "description": "IEMidi is a cross-platform MIDI editor that leverages RtMidi for its MIDI message handling. The editor is designed to map any MIDI message to various actions such as volume control, mute, console commands or opening files. It also includes a MIDI logger for monitoring MIDI messages in real-time.",
     "image": "/Resources/IEMidi.jpg",
     "zoom": 120,
     "link": "https://github.com/Interactive-Echoes/IEMidi",
@@ -12,7 +12,7 @@
   },
   {
     "title": "IECore",
-    "description": "IECore is an open-source library designed for Windows and macOS, leveraging ImGui as its user interface. It serves as the core framework for all applications under the Interactive Echoes (IE) brand, offering a plug-and-play setup with pre-configured entry points, making it simple to start developping C++ applications.",
+    "description": "IECore is a library designed for Linux, Windows and macOS, leveraging ImGui as its user interface. It serves as the core framework for all applications under the Interactive Echoes (IE) brand, offering a plug-and-play setup with pre-configured entry points, making it simple to start developping C++ applications.",
     "image": "/Resources/IECore.jpg",
     "zoom": 120,
     "link": "https://github.com/Interactive-Echoes/IECore",
@@ -34,7 +34,7 @@
   },
   {
     "title": "IEFxRack (Work in Progress)",
-    "description": "IEFxRack is IE’s cross-platform virtual module FX rack for Windows and macOS. It provides a modular environment for creating and shaping sounds, using the JUCE library as its audio framework.",
+    "description": "IEFxRack is IE's cross-platform virtual module FX rack for Windows and macOS. It provides a modular environment for creating and shaping sounds, using the JUCE library as its audio framework.",
     "image": "/Resources/IEFxRack.jpg",
     "zoom": 120,
     "link": "https://github.com/Interactive-Echoes/IEFxRack",
