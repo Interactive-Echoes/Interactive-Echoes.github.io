@@ -16,13 +16,20 @@ document.addEventListener('DOMContentLoaded', function ()
     window.addEventListener('scroll', onWindowScroll);
 
     const loader = document.getElementById('loader-container');
+    document.body.style.overflow = 'hidden';
     window.addEventListener('load', function () 
     {
         if (loader)
         {
             loader.classList.add('hidden');
+            document.body.style.overflow = 'visible';
         }
     });
+
+    if (!loader)
+    {
+        document.body.style.overflow = 'visible';
+    }
 
     updateActiveNavLink();
 });
