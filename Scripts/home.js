@@ -8,11 +8,7 @@ const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 document.addEventListener('DOMContentLoaded', function () 
 {
-    if (!isMobile)
-    {
-        setupDesktop();
-    }
-
+    setupNavlink();
     window.addEventListener('scroll', onWindowScroll);
 
     const loader = document.getElementById('loader-container');
@@ -38,10 +34,8 @@ document.addEventListener('DOMContentLoaded', function ()
 /* Setup */
 
 
-function setupDesktop()
-{ 
-    document.addEventListener("mousemove", onMouseMove, false);
-
+function setupNavlink()
+{
     document.querySelectorAll('a[href^="#"]').forEach(anchor => 
     {
         anchor.addEventListener('click', function (e) 
@@ -51,7 +45,7 @@ function setupDesktop()
             const targetId = this.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
       
-            const targetPosition = targetElement.offsetTop - 115;
+            const targetPosition = targetElement.offsetTop;
       
             window.scrollTo(
             {
@@ -68,24 +62,8 @@ function setupDesktop()
 
 function onWindowScroll() 
 {
-    if (isMobile)
-    {
-        updateCenteredContainer();
-    }
-    else
-    {
-        updateActiveNavLink();
-    }
-}
-
-function onMouseMove(mouseEvent)
-{
-    if (homeBackgroundVideoContainer) 
-    {
-        const offsetX = (mouseEvent.clientX / 400).toFixed(2);
-        const offsetY = (mouseEvent.clientY / 400).toFixed(2);
-        homeBackgroundVideoContainer.style.transform = `translate(-${offsetX}%, -${offsetY}%)`;
-    }
+    updateActiveNavLink();
+    updateCenteredContainer();
 }
 
 
@@ -126,7 +104,7 @@ function updateCenteredContainer()
 function updateActiveNavLink() 
 {
     const navLinks = document.querySelectorAll('a[href^="#"]');
-    const scrollPosition = window.scrollY + 100;
+    const scrollPosition = window.scrollY;
     let activeLink = null;
     let closestDistance = Infinity;
 
@@ -145,6 +123,7 @@ function updateActiveNavLink()
             }
         }
         link.classList.remove('active');
+        link.classList.remove('hover');
     });
 
     if (activeLink) 
