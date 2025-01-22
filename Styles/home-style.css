@@ -485,10 +485,10 @@ body
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    gap: 50vw;
-    width: 90vw;
+    gap: 40vw;
+    width: 96vw;
     padding-left: 0%;
-    left: 5vw;
+    left: 2vw;
     margin-top: 2%;
     height: auto;
     background-color:#3333331f;
