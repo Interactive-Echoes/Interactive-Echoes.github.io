@@ -109,13 +109,28 @@ body
     justify-content: center;
 }
 
+#main-logo
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+#main-logo h2
+{
+  padding-left: 4%;
+  font-size: 16px;
+}
+
 #main-logo picture
 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
 #main-logo img
@@ -495,6 +510,12 @@ body
   #about-section
   {
     width: 100%;
+  }
+
+  #main-logo h2
+  {
+    padding-left: 4%;
+    font-size: 14px;
   }
 
   #main-logo img
