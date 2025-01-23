@@ -135,7 +135,8 @@ body
 
 #main-logo img
 {
-  width: 40%;
+  /* width: 40%; */
+  width: 600px;
 }
 
 #fixed-info-section
