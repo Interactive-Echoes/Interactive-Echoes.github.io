@@ -81,7 +81,6 @@ p
 
 .highlight-text
 {
-  font-size: 16px;
   font-weight: bold;
 }
 
@@ -117,12 +116,6 @@ body
   justify-content: center;
   text-align: center;
   height: 100vh;
-}
-
-#main-logo h2
-{
-  padding-left: 4%;
-  font-size: 16px;
 }
 
 #main-logo picture
@@ -483,11 +476,6 @@ body
     font-size: 22px;
   }
 
-  .highlight-text
-  {
-    font-size: 14px;
-  }
-
   #main-section
   {
     padding-left: 3%;
@@ -511,12 +499,6 @@ body
   #about-section
   {
     width: 100%;
-  }
-
-  #main-logo h2
-  {
-    padding-left: 4%;
-    font-size: 14px;
   }
 
   #main-logo img
