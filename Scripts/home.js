@@ -63,7 +63,11 @@ function setupNavlink()
 function onWindowScroll() 
 {
     updateActiveNavLink();
-    updateCenteredContainer();
+
+    if (isMobile)
+    {
+        updateCenteredContainer();
+    }
 }
 
 
