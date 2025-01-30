@@ -44,6 +44,17 @@
     ]
   },
   {
+    "title": "IEAudio4Linux",
+    "description": "A lightweight, modern C++ wrapper for ALSA, simplifying Linux audio development.",
+    "image": "/Resources/IECore.jpg",
+    "zoom": 120,
+    "link": "https://github.com/Interactive-Echoes/IEAudio4Linux",
+    "tools":
+    [
+      "C++", "ALSA", "Linux" 
+    ]
+  },
+  {
     "title": "IEActions",
     "description": "IE's action extension library for Windows and macOS programs.",
     "image": "/Resources/IECore.jpg",
