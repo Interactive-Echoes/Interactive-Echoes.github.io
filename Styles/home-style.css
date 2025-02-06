@@ -139,7 +139,7 @@ body
     display: flex;
     padding-left: 5%;
     flex-direction: column;
-    align-items: start;
+    align-items: end;
     justify-content: center;
     overflow: hidden;
     gap: 5vh;
@@ -343,10 +343,12 @@ body
 .side-nav-list 
 {
   list-style: none;
+  width: 100%;
   padding: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+  align-items: end;
   gap: 10px;
 }
 
