@@ -23,7 +23,7 @@
   },
   {
     "title": "IEConcurrency",
-    "description": "IE's high-performance concurrency library providing modern concurrent data structures and other primitives.",
+    "description": "IE's high-performance concurrency library providing modern concurrent data structures and other synchronization primitives.",
     "image": "/Resources/IEConcurrency.png",
     "zoom": 120,
     "link": "https://github.com/Interactive-Echoes/IEConcurrency",
@@ -56,7 +56,7 @@
   },
   {
     "title": "IEActions",
-    "description": "IE's action extension library for Windows and macOS programs.",
+    "description": "IE's action extension library for Linux, Windows and macOS programs.",
     "image": "/Resources/IECore.jpg",
     "zoom": 120,
     "link": "https://github.com/Interactive-Echoes/IEActions",
