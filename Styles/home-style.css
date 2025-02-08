@@ -518,6 +518,11 @@ body
     padding-top: 90px;
   }
 
+  .side-nav-list
+  {
+    align-items: start;
+  }
+
   .project-title
   {
     font-size: 20px;
