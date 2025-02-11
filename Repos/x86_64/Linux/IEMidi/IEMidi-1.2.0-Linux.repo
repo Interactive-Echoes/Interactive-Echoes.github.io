@@ -1,0 +1,5 @@
+[IEMidi]
+name=IEMidi
+baseurl=https://interactive-echoes.github.io/Repos/x86_64/Linux/IEMidi/IEMidi-1.2.0-Linux.rpm
+enabled=1
+gpgcheck=1
