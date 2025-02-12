@@ -33,8 +33,12 @@ Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/
    Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/x86_64/package.rpm
    Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/ARM64/package.rpm
    ```
+3. Sign rpm package(s)
+   ```
+   sudo rpm --define "_gpg_name <name>" Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/<Arch>/package.rpm
+   ```
 
-3. Create `.repo` file at `Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/<PackageName>.repo` with this content:
+4. Create `.repo` file at `Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/<PackageName>.repo` with this content:
     ```ini
     [<PackageName>]
     name=<PackageName>
@@ -44,7 +48,7 @@ Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/
     gpgkey=https://github.com/mozahzah.gpg
     ```
 
-4. Generate repository metadata for each architecture:
+5. Generate repository metadata for each architecture:
    ```bash
    # For each architecture directory:
    cd Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/x86_64
