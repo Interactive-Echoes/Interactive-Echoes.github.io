@@ -1,0 +1,6 @@
+[IEMidi]
+name=IEMidi
+baseurl=https://interactive-echoes.github.io/Repos
+enabled=1
+gpgcheck=1
+gpgkey=https://github.com/mozahzah.gpg
