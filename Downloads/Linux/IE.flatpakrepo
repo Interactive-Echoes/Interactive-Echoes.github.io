@@ -5,4 +5,4 @@ Homepage=https://interactive-echoes.github.io/
 Comment=Central repository of IE's Flatpak applications
 Description=Central repository of IE's Flatpak applications
 Icon=https://github.com/Interactive-Echoes/IECore/raw/master/Resources/IE-Brand-Kit/IE-Logo-NoBg-512.png
-GPGKey=https://github.com/Interactive-Echoes/Crypto/mozahzah.gpg.base64
+GPGKey=https://interactive-echoes.github.io/Crypto/mozahzah.gpg.base64
