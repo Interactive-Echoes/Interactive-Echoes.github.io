@@ -4,56 +4,49 @@
 
 1. Place the installer in:  
    `Interactive-Echoes.github.io/Downloads/Win/<PackageName>/<Arch>`  
-   *(Replace `<PackageName>` with your actual package name)*
 
 2. Provide users with this download link format:  
-   `https://interactive-echoes.github.io/Downloads/Win/<PackageName>/<Arch>/<InstallerName>.exe`
+   `https://interactive-echoes.github.io/Downloads/Win/<PackageName>/<Arch>/<InstallerName>.exe`  
 
 ## Linux
 
 ### RPM-Based Distributions (RHEL/CentOS/Fedora)
 
-**Repository Structure:**
-```
-Interactive-Echoes.github.io/Downloads/Linux/Rpm/Repos/<PackageName>
-├── <Arch>/                 # Architecture subdirectory (e.g., x86_64, ARM64)
-    └── <signed-rpm-files>  # Signed RPM packages
-```
-
 **Setup Steps:**
 
 1. Create directory structure:
-   ```bash
-   mkdir -p Interactive-Echoes.github.io/Downloads/Linux/Rpm/<PackageName>/<Arch>
-
-2. Place signed RPM packages in their respective architecture directories:
-   ```
-   Interactive-Echoes.github.io/Downloads/Linux/Rpm/<PackageName>/x86_64/package.rpm
-   Interactive-Echoes.github.io/Downloads/Linux/Rpm/<PackageName>/ARM64/package.rpm
-   ```
-3. Sign rpm package(s)
-   ```
-   sudo rpm Interactive-Echoes.github.io/Downloads/Linux/Rpm/<PackageName>/<Arch>/package.rpm
+   ```sh
+   mkdir -p Interactive-Echoes.github.io/Downloads/Linux/RPM/Packages
    ```
 
-4. Create `.repo` file at `Interactive-Echoes.github.io/Downloads/Linux/Rpm/<PackageName>/<PackageName>.repo` with this content:
-    ```ini
-    [<PackageName>]
-    name=<PackageName>
-    baseurl=https://interactive-echoes.github.io/Downloads/Linux/Rpm/Repos/$basearch/
-    enabled=1
-    gpgcheck=1
-    gpgkey=https://github.com/mozahzah.gpg
-    ```
+2. Create and sign the .rpm using CMake
+   ```sh
+   cmake -S . -B ./build -DCMAKE_BUILD_TYPE=Release
+   cmake --build ./build
+   cpack --config ./build/CPackConfig.cmake
+   rpm --addsign packages/*.rpm
+   ```
 
-5. Generate repository metadata for each architecture:
-   ```bash
-   # For each architecture directory:
-   cd Interactive-Echoes.github.io/Downloads/<PackageName>/Linux/Rpm/x86_64
+3. Copy the signed RPM into Interactive-Echoes.github.io/Downloads/Linux/RPM/Packages
+   ```sh
+   cp packages/*.rpm Interactive-Echoes.github.io/Downloads/Linux/RPM/Packages
+   ```
+   [!NOTE]
+   > For steps 1,2,3 using rpm-builder-ie custom command
+
+4. Generate repository metadata for each architecture:
+   ```sh
+   cd Interactive-Echoes.github.io/Downloads/Linux/Rpm
    createrepo .
+   git add .
+   # git commit and push
+   ```
 
-   cd ../ARM64
-   createrepo .
+**User Side** 
+```sh
+sudo curl -o /etc/yum.repos.d/IE.repo https://interactive-echoes.github.io/Downloads/Linux/RPM/IE.repo
+sudo dnf install <package-name>
+```
 
 ### DEB-Based Distributions (Debian/Ubuntu)
 
