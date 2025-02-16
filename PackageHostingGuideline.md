@@ -31,7 +31,7 @@
    ```sh
    cp packages/*.rpm Interactive-Echoes.github.io/Downloads/Linux/RPM/Packages
    ```
-   [!NOTE]
+   > [!NOTE]
    > For steps 1,2,3 using rpm-builder-ie custom command
 
 4. Generate repository metadata for each architecture:
