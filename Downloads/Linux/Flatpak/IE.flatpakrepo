@@ -1,6 +1,6 @@
 [Flatpak Repo]
 Title=IE
-Url=https://interactive-echoes.github.io/Downloads/Linux/Repos
+Url=https://interactive-echoes.github.io/Downloads/Linux/Flatpak/Repos
 Homepage=https://interactive-echoes.github.io/
 Comment=Central repository of IE's Flatpak applications
 Description=Central repository of IE's Flatpak applications
