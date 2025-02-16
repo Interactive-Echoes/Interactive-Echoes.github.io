@@ -1,6 +1,6 @@
 [IE]
 name=IE
-baseurl=https://interactive-echoes.github.io/Downloads/Linux/RPM/Repos/$basearch
+baseurl=https://interactive-echoes.github.io/Downloads/Linux/RPM
 enabled=1
 gpgcheck=1
 gpgkey=https://github.com/mozahzah.gpg
