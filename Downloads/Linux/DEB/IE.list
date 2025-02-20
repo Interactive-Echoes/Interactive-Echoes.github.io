@@ -1,1 +1,1 @@
-deb [signed-by=https://github.com/mozahzah.gpg] https://interactive-echoes.github.io/Downloads/Linux/DEB ./
+deb [signed-by=/etc/apt/trusted.gpg.d/mozahzah.gpg] https://interactive-echoes.github.io/Downloads/Linux/DEB/ ./

@@ -52,6 +52,12 @@ sudo dnf install <package-name>
 
 #### Coming soon...
 
+User Step 1 
+```
+wget -O /etc/apt/trusted.gpg.d/mozahzah.gpg https://github.com/mozahzah.gpg
+```
+
+
 ### Flatpak
 
 All repositories are built and set up using `flatpak-builder` inside `Downloads/Linux/Repos`.
