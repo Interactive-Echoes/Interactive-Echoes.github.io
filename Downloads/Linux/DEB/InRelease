@@ -1,0 +1,23 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Date: Thu, 20 Feb 2025 21:54:12 +0000
+MD5Sum:
+ d9f8ee7def87c6544654787c0bf5dc3f              431 Packages.gz
+ 02f05068c467fc82a5df916fa9c15752               38 Release
+SHA1:
+ 5ca1c75acbb3596435cdcf87a808f1a7b3505212              431 Packages.gz
+ f3baada19168cab68438292c2ca23c601ceae9e0               38 Release
+SHA256:
+ f281252f7ad48ab3a500a659c5f81c7c39618f6664dfa15f4453de3639b24c7d              431 Packages.gz
+ ed81b89348170714be0ebbbcce4b05b228ad8b5e8a7e89b1fd5c8fe755f0dea7               38 Release
+SHA512:
+ d42c2f39f9c12494b8042b49f3a8e4f40bf7639bb05b64e555cb1984d33d8e5430c8deb209424d573e446159b3123ce649ee51ca30b0626cfb60cfa16ce03cd9              431 Packages.gz
+ 40b52234b0d2ea25bf3e24488a7328fe5f578ae1b1160513d5d2057ef59f9861567179620b8216b55a3b0a18147ab413fcc3034572d00ea3bcb113bb11ad2f29               38 Release
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSiviFke6lJThKapz5Z9wIXTL8jgQUCZ7evpAAKCRBZ9wIXTL8j
+gevzAQCgnXEnAY3yyaS0AB/LE+sQ1eG+LoB8WNXKGlIaIcKjaAD+NmuimEEKP4U7
+3RtRS1yi9+BbkFVBEpBhz4UkBrjGYQ0=
+=mtI3
+-----END PGP SIGNATURE-----
