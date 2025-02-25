@@ -1,1 +1,1 @@
-deb [signed-by=/etc/apt/trusted.gpg.d/mozahzah.gpg] https://interactive-echoes.github.io/Downloads/Linux/DEB/ stable main
+deb [signed-by=/etc/apt/trusted.gpg.d/ie-public.gpg] https://interactive-echoes.github.io/Downloads/Linux/DEB/ stable main
