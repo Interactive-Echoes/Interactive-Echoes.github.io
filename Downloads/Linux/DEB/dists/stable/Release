@@ -1,3 +1,10 @@
+Origin: code stable
+Label: code stable
+Suite: stable
+Codename: stable
+Architectures: amd64
+Components: main
+Acquire-By-Hash: yes
 Date: Tue, 25 Feb 2025 20:50:18 +0000
 MD5Sum:
  a7c278d74374cec45903f8f48bf59298               38 Release

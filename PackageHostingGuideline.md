@@ -54,9 +54,8 @@ sudo dnf install <package-name>
 
 User Step 1 
 ```
-wget -O ~/mozahzah.asc https://github.com/mozahzah.gpg
-sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/mozahzah.gpg ~/mozahzah.asc
-sudo rm ~/mozahzah.asc
+wget -O /etc/apt/trusted.gpg.d/ie-public.gpg https://interactive-echoes.github.io/Downloads/ie-public.gpg
+wget -O /etc/apt/sources.list.d/IE.list https://interactive-echoes.github.io/Downloads/Linux/DEB/IE.list
 ```
 
 
