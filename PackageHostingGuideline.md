@@ -50,14 +50,37 @@ sudo dnf install <package-name>
 
 ### DEB-Based Distributions (Debian/Ubuntu)
 
-#### Coming soon...
+**Setup Steps:**
 
-User Step 1 
+1. Create .deb package using CMake
+```sh
+cmake -S . -B ./build -DCMAKE_BUILD_TYPE=Release
+cmake --build ./build
+cpack --config ./build/CPackConfig.cmake
 ```
+
+2. Place .deb package into Interactive-Echoes.github.io/Downloads/Linux/DEB/pool/main
+
+3. Create a binary-<arch> directory in Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main example:  'Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main/binary-amd64'
+
+4. Inside that directory run (do for each architecture):
+```sh
+dpkg-scanpackages -m ../../../../pool/main > Packages
+gzip -c Packages > Packages.gz
+```
+
+5. Go back to the stable directory to create and sign the Release files
+```sh
+apt-ftparchive release . > Release  # This will create a Release file
+gpg --default-key "ie" -abs -o Release.gpg Release # This will create a Release.gpg signature
+gpg --default-key "ie" --clearsign -o InRelease Release # This creates inline signed Release
+```
+
+**User Side** 
+```sh
 wget -O /etc/apt/trusted.gpg.d/ie-public.gpg https://interactive-echoes.github.io/Downloads/ie-public.gpg
 wget -O /etc/apt/sources.list.d/IE.list https://interactive-echoes.github.io/Downloads/Linux/DEB/IE.list
 ```
-
 
 ### Flatpak
 
