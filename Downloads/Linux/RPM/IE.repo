@@ -3,4 +3,4 @@ name=IE
 baseurl=https://interactive-echoes.github.io/Downloads/Linux/RPM
 enabled=1
 gpgcheck=1
-gpgkey=https://github.com/mozahzah.gpg
+gpgkey=https://Interactive-Echoes.github.io/Downloads/ie-public.asc
