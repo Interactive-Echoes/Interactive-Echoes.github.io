@@ -61,7 +61,8 @@ cpack --config ./build/CPackConfig.cmake
 
 2. Place .deb package into Interactive-Echoes.github.io/Downloads/Linux/DEB/pool/main
 
-3. Create a binary-<arch> directory in Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main example:  'Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main/binary-amd64'
+3. Create a binary-<arch> directory in Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main example:  
+'Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main/binary-amd64'
 
 4. Inside that directory run (do for each architecture):
 ```sh
