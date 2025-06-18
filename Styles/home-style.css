@@ -139,7 +139,7 @@ body
     display: flex;
     padding-left: 5%;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     justify-content: center;
     overflow: hidden;
     gap: 5vh;
@@ -497,6 +497,11 @@ body
     margin-top: 2%;
     height: auto;
     z-index: 2;
+  }
+
+  #home-nav-item
+  {
+    display: none;
   }
 
   #about-section
