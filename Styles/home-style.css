@@ -7,7 +7,7 @@ Author: mozahzah
 :root 
 {
   /* Colors */
-  --primary-font-color: rgb(235,235,235);
+  --primary-font-color: rgb(240,240,240);
   --secondary-color: #707070;
 
   /* Animation */
@@ -76,7 +76,7 @@ h3
 p
 {
   margin-top: 0;
-  color: rgb(185, 185, 185);
+  color: rgb(230, 230, 230);
 }
 
 .highlight-text
