@@ -32,11 +32,11 @@
    cp packages/*.rpm Interactive-Echoes.github.io/Downloads/Linux/RPM/Packages
    ```
 > [!NOTE]
-> For steps 1,2,3 using rpm-builder-ie custom command
+> For steps 1,2,3 you can use rpm-builder-ie custom command
 
 4. Generate repository metadata for each architecture:
    ```sh
-   cd Interactive-Echoes.github.io/Downloads/Linux/Rpm
+   cd Downloads/Linux/RPM
    createrepo .
    git add .
    # git commit and push
