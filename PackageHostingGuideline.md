@@ -64,10 +64,10 @@ cpack --config ./build/CPackConfig.cmake
 3. Create a binary-<arch> directory in Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main example:  
 'Interactive-Echoes.github.io/Downloads/Linux/DEB/dists/stable/main/binary-amd64'
 
-4. Inside that directory run (do for each architecture):
+4. Inside the /DEB directory (do for each architecture):
 ```sh
-dpkg-scanpackages -m ../../../../pool/main > Packages
-gzip -c Packages > Packages.gz
+apt-ftparchive packages pool/main > dists/stable/main/binary-amd64/Packages
+gzip -k -f dists/stable/main/binary-amd64/Packages
 ```
 
 5. Go back to the stable directory to create and sign the Release files
