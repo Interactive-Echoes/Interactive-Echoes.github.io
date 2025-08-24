@@ -1,17 +1,24 @@
-Date: Sun, 24 Aug 2025 00:05:58 +0000
+Architectures: amd64
+Codename: stable
+Components: main
+Date: Sun, 24 Aug 2025 01:17:06 +0000
+Description: IEMidi APT Repo
+Label: iemidi
+Origin: iemidi
+Suite: stable
 MD5Sum:
- fdfba15073742a1d3f164c2fa37aa907               38 Release
+ de326e36aed63eb1ebef91794c8e0efb              165 Release
  ae3154034efc83dc861f01f73f70b66e              897 main/binary-amd64/Packages
  72f4287439d67f8759df7c7f94ca7e7b              477 main/binary-amd64/Packages.gz
 SHA1:
- 38344a49e67c539e2ea9da5f1cd1e4d9fa37acea               38 Release
+ c32dad645fe0a1ddd11ca5c2286e7175c1c3918c              165 Release
  e7e408c6caea56eff055f382d01a8043c3b60a7f              897 main/binary-amd64/Packages
  e88f3cd6864ca259044c733e123713acca783251              477 main/binary-amd64/Packages.gz
 SHA256:
- d8dfea59dd02b18db955d0a459864cb25d825d1569ca6d51e8663505513ef82f               38 Release
+ 72e00aa380706832eaaa4b9b5d533f113a404b13bb64c7d8bb019ea90c901e7d              165 Release
  e1b87b914d0f7c18d94510967f76488fcb18fa4615056df7a2f10cd37a5700e4              897 main/binary-amd64/Packages
  76f085d4047450673871ec2b77a61283cc10e2cb528a57fedf26e8703e00b2ea              477 main/binary-amd64/Packages.gz
 SHA512:
- 10a22ce01c1365f07360e84e1dba992ea19857be6ca8651e56f05c5b8086666a15795cfab37d79dec7a7e32aacdaa77625353ac687d2a9c406e978c2c21ea76c               38 Release
+ d300661f678abf276fb4d9f2283c0f9c838a3e8bda5e476db290ce8a48557bf248bb3d251acd3a9bc3b5da9b88324e5ec3456e255e394edaa75c45b3892cad15              165 Release
  b4bb5a32dafdcb500bef7bbe63cc6eb1cd261f3fa7e8bf4ce71930a8e97a90755be4d9c6ce602627705f80d74836385c3c4db6e0b61ce3803ee545a66e1c2441              897 main/binary-amd64/Packages
  9eb938d1860a6a0f8ac255a42ff2ca46ce7565003e3bbdc91f715b27c030487fcd6c7232438cbfd7e34c3a3857b6ef25eb2b07f0f333689f8e8e35f2af0efcbd              477 main/binary-amd64/Packages.gz
