@@ -72,7 +72,7 @@ gzip -k -f dists/stable/main/binary-amd64/Packages
 
 5. Go back to the stable directory to create and sign the Release files
 ```sh
-apt-ftparchive -c=dists/stable/Release.conf  release dists/stable > dists/stable/Release  # This will create a Release file
+apt-ftparchive -c=dists/stable/Release.conf release dists/stable > dists/stable/Release  # This will create a Release file
 gpg --default-key "ie" -abs -o dists/stable/Release.gpg dists/stable/Release # This will create a Release.gpg signature
 gpg --default-key "ie" --clearsign -o dists/stable/InRelease dists/stable/Release # This creates inline signed Release
 ```
