@@ -1,1 +1,0 @@
-deb [signed-by=/etc/apt/trusted.gpg.d/ie-public.gpg] https://interactive-echoes.github.io/Downloads/Linux/DEB/ stable main

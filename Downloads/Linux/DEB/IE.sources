@@ -1,0 +1,5 @@
+Types: deb
+URIs: https://interactive-echoes.github.io/Downloads/Linux/DEB/
+Suites: stable
+Components: main
+Signed-By: /etc/apt/trusted.gpg.d/ie-public.gpg
